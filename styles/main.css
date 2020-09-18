@@ -1,0 +1,207 @@
+/*
+Core HTML
+*/
+
+body {
+	margin: auto;
+	max-width: 1200px;
+	padding: 5px;
+	background: #dbe7ef;
+	min-height: 101vh;
+}
+
+section {
+	margin-top: 10px;
+	display: block;
+	box-shadow: 0px 0px 10px 0px rgb(0, 68, 196);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: #FFFFFF;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+footer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 75%;
+}
+
+nav {
+	display: block;
+}
+
+a{
+	color: rgb(0, 0, 238);
+}
+
+/*
+Generic
+*/
+
+.inset-sm {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.inset-md {
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+}
+
+.inset-lg {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.inset-hg {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/*
+Navbar
+*/
+
+nav>ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	margin-top: 0;
+}
+
+nav>ul>li {
+	display: inline-block;
+}
+
+nav>ul>li::after {
+	content: " | ";
+}
+
+nav>ul>li:nth-last-of-type(1)::after {
+	content: "";
+}
+
+nav a {
+	text-decoration: none;
+}
+
+/*
+Flex
+*/
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: flex-start;
+	height: 100%;
+}
+
+.item {
+	flex-grow: 1;
+	flex-basis: 33.3333%;
+	flex-basis: 200px;
+	padding: 5px;
+}
+
+.item-half{
+	flex-grow: 1;
+	flex-basis: 50%;
+	flex-basis: 500px;
+	padding: 5px;
+}
+
+.item-flex-v-bottom {
+	align-self: flex-end;
+}
+
+.item-flex-v-center {
+	align-self: center;
+}
+
+.item-center {
+	text-align: center;
+}
+
+.item-img {
+	max-width: 200px;
+}
+
+.item-full-width {
+	flex-basis: 100%;
+}
+
+/*
+Images
+*/
+
+.img-responsive {
+	max-width: 100%;
+	min-width: 100px;
+}
+/*
+Text
+*/
+
+p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.brand {
+	font-weight: bold;
+}
+
+.book-title {
+	font-weight: bold;
+	font-style: italic;
+}
+
+.text-attention {
+	color: rgb(0, 68, 196);
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.text-sm {
+	font-size: 75%;
+}
+
+.text-md{
+	font-size: 90%;
+}
+
+.text-no-style{
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.qa-cell{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.qa-q{
+	font-weight: bold;
+	display: block;
+}
+
+.qa-a{
+	display: block;
+}
+
+/*
+Media Queries
+*/
+
+@media screen and (max-width: 480px) {
+	nav>ul>li {
+		display: block;
+	}
+	nav>ul>li::after {
+		content: "";
+	}
+}
