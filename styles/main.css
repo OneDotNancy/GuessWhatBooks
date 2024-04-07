@@ -107,9 +107,11 @@ Flex
     padding: 5px 10px;
 }
 
-.item-full-height {
-    height: calc(100% - 10px);
-}
+@media screen and (min-width: 475px) {
+    .item-full-height {
+         height: calc(100% - 10px);
+    }
+} 
 
 .item-half {
     flex-grow: 1;
